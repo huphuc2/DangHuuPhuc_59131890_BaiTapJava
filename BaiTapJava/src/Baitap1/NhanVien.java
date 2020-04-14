@@ -19,11 +19,11 @@ public class NhanVien {
         
     }
     public NhanVien(String n,int a,String add,double tl,int sum){
-        Ten = n;
-        Tuoi = a;
-        DiaChi = add;
-        TienLuong = tl;
-        TongSoGioLam = sum;
+        this.Ten = n;
+        this.Tuoi = a;
+        this.DiaChi = add;
+        this.TienLuong = tl;
+        this.TongSoGioLam = sum;
     } 
             
     public String getTen(){
@@ -89,6 +89,7 @@ public class NhanVien {
             }
         }
         return 0;
-        }
+    }
        
 }
+        
