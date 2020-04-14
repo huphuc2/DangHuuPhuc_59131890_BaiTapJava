@@ -10,45 +10,85 @@ package Baitap1;
  * @author huuph
  */
 public class NhanVien {
-    /*Khai báo biến*/
-    char Ten;
-    int Tuoi,TongSoGioLam;
-    char DiaChi;
-    double TienLuong;
-    //getter cho Tên
-    public char getTen(){
+    public String Ten;
+    public int Tuoi,TongSoGioLam;
+    public String DiaChi;
+    public double TienLuong,Thuong;
+
+    public NhanVien(){
+        
+    }
+    public NhanVien(String n,int a,String add,double tl,int sum){
+        Ten = n;
+        Tuoi = a;
+        DiaChi = add;
+        TienLuong = tl;
+        TongSoGioLam = sum;
+    } 
+            
+    public String getTen(){
         return Ten;
     }
-    //setter cho Tên
-    public char setTen(char Ten){
+
+    public String setTen(String Ten){
         this.Ten= Ten;
         return Ten;
     }
-    //getter cho Tuổi
+
     public int getTuoi(){
         return Tuoi;
     }
-    //setter cho Tuổii
+
     public int setTuoi(int Tuoi){
         this.Tuoi= Tuoi;
         return Tuoi;
     }
-    //getter cho Tổng số giờ làm
+
     public int getTongSoGioLam(){
         return TongSoGioLam;
     }
-    //setter cho Tên
+
     public int setTongSoGioLam(int TongSoGioLam){
         this.TongSoGioLam= TongSoGioLam;
         return TongSoGioLam;
     }
-    //getter cho Tên
-    public char getDiaChi(){
+
+    public String getDiaChi(){
         return DiaChi;
     }
-    //setter cho Tên
-    public char setDiaChi(char DiaChi){
+    public String setDiaChi(String DiaChi){
         this.DiaChi= DiaChi;
         return DiaChi;
     }
+    public double getTienLuong(){
+        return TienLuong;
+    }
+    public double setTienLuong(double TienLuong){
+        this.TienLuong = TienLuong;
+        return TienLuong;
+    }
+    public void ThongTin(String name,int age,String ad){
+        Ten = name;
+        Tuoi = age;
+        DiaChi = ad;        
+    }
+    public String getThongtin(){
+        System.out.println("Ho va Ten : " + Ten);
+        System.out.println("Tuoi : " + Tuoi);
+        System.out.println("Dia Chi : " + DiaChi);
+        return null;
+    }
+    public double TinhThuong(){
+        if(TongSoGioLam>=200) {
+            Thuong = TienLuong*20/100;
+        }else{
+            if( TongSoGioLam < 200 && TongSoGioLam >= 100){
+            Thuong = TienLuong*10/100;
+            }else{
+                Thuong = 0;
+            }
+        }
+        return 0;
+        }
+       
 }

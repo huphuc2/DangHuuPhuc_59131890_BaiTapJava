@@ -12,11 +12,14 @@ package Baitap1;
 public class Main {
 
     /**
-     * @param args the command line arguments
+     * @param args
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        NhanVien nv = new NhanVien();
+    public static void NhanVien(String args[]){
+
+        NhanVien s1 = new NhanVien();
+        NhanVien s2 = new NhanVien("Dang Huu Phuc",23,"Nha Trang", 2500000, 240); 
+        System.out.println(s2);
+        
     }
     
 }
