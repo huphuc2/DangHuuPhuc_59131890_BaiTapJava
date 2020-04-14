@@ -73,22 +73,23 @@ public class NhanVien {
         DiaChi = ad;        
     }
     public String getThongtin(){
-        System.out.println("Ho va Ten : " + Ten);
-        System.out.println("Tuoi : " + Tuoi);
-        System.out.println("Dia Chi : " + DiaChi);
-        return null;
+        return "Ten: "             + Ten          + "\n" +
+               "Tuoi: "            + Tuoi         + "\n" +
+               "Dia Chi: "         + DiaChi       + "\n" +
+               "Tien Luong: "      + TienLuong    + "\n" +
+               "Tong So Gio Lam: " + TongSoGioLam + "\n";
     }
     public double TinhThuong(){
         if(TongSoGioLam>=200) {
-            Thuong = TienLuong*20/100;
+            return TienLuong*20/100;
         }else{
             if( TongSoGioLam < 200 && TongSoGioLam >= 100){
-            Thuong = TienLuong*10/100;
+            return TienLuong*10/100;
             }else{
-                Thuong = 0;
+                return 0;
             }
         }
-        return 0;
+        
     }
        
 }
