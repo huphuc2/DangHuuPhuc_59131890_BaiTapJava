@@ -16,24 +16,7 @@ public class SinhVienBiz extends SinhVienPoly {
         this.diemMarketing = DiemMarketing;
         this.diemSales = DiemSales;
     }
-    @Override
-        public String getHoten(){
-        return hoten;
-    }
-    @Override
-    public String setHoten(String hoten){
-        this.hoten = hoten;
-        return hoten;
-    }
-    @Override
-    public String getNganh(){
-        return nganh;
-    }
-    @Override
-    public String setNganh(String nganh){
-        this.nganh = nganh;
-        return nganh;
-    }
+   
     @Override
     public double getDiem(){
         return(2*diemMarketing+diemSales)/3;

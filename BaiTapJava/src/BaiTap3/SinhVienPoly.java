@@ -38,7 +38,7 @@ public abstract class SinhVienPoly {
             return "Yeu";
         }else if(getDiem()>=5&&getDiem()<6.5){
                 return "Trung Binh";
-            }else if(getDiem()>=6.5&&getDiem()>7.5){
+            }else if(getDiem()>=6.5&&getDiem()<7.5){
                     return "Kha";
                 }else if(getDiem()>=7.5&&getDiem()<9){
                         return "Gioi";
