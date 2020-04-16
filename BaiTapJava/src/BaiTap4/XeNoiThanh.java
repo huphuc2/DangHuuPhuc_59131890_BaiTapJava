@@ -12,12 +12,12 @@ package BaiTap4;
 public class XeNoiThanh extends ChuyenXe{
     int sotuyen;
     double sokmdiduoc;
-    XeNoiThanh(String maso,String hotentaixe,int sotuyen,int sokmdiduoc,double doanhthu){
+    XeNoiThanh(String maso,String hotentaixe,int sotuyen,int sokmdiduoc,int doanhthu){
         this.hotentaixe = hotentaixe;
         this.maso = maso;
         this.sotuyen = sotuyen;
         this.sokmdiduoc = sokmdiduoc;
         this.doanhthu = doanhthu;
     }
-    
+  
 }
